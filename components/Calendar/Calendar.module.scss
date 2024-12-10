@@ -1,0 +1,12 @@
+.calendar {
+  min-height: 100vh;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  min-height: 100vh;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
