@@ -1,12 +1,22 @@
 .calendar {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.calendar-header {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: min(5vw, 4em);
+  text-align: center;
 }
 
 .calendar-body {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
-  min-height: 100vh;
   border-top: 1px solid #eee;
   border-left: 1px solid #eee;
 }
